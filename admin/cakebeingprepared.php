@@ -14,7 +14,7 @@ if (strlen($_SESSION['fosaid']==0)) {
 
 <head>
 
-    <title>Cake Bakery System</title>
+    <title>Eco Harvest</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -56,7 +56,7 @@ if (strlen($_SESSION['fosaid']==0)) {
                 </tr>
               </thead>
               <?php
-$ret=mysqli_query($con,"select * from tblorderaddresses where OrderFinalStatus='Cake being Prepared'");
+$ret=mysqli_query($con,"select * from tblorderaddresses where OrderFinalStatus='Oil being Prepared'");
 $cnt=1;
 while ($row=mysqli_fetch_array($ret)) {
 

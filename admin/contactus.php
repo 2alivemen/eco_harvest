@@ -29,7 +29,7 @@ $email=$_POST['email'];
 
 <head>
 
-    <title>Cake Bakery System|| Edit Contact Us</title>
+    <title>Eco Harvest|| Edit Contact Us</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">

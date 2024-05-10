@@ -1,6 +1,8 @@
 <?php
 session_start();
 error_reporting(0);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 include_once('includes/dbconnection.php');
 if (strlen($_SESSION['fosuid']==0)) {
   header('location:logout.php');
@@ -26,7 +28,80 @@ $result = mysqli_multi_query($con, $query);
 if ($result) {
 
 echo '<script>alert("Your order placed successfully. Order number is "+"'.$orderno.'")</script>';
-echo "<script>window.location.href='my-order.php'</script>";
+
+
+
+
+    //Import PHPMailer classes into the global namespace
+    // use PHPMailer\PHPMailer\PHPMailer;
+    // use PHPMailer\PHPMailer\Exception;
+    require 'PHPMailer-master/src/Exception.php';
+    require 'PHPMailer-master/src/PHPMailer.php';
+    require 'PHPMailer-master/src/SMTP.php';
+
+    try 
+    {
+    $mail = new PHPMailer();
+    $mail->SMTPDebug = 1;           //Enable verbose debug output      
+    $mail->Mailer = "smtp";            
+    $mail->isSMTP();               //Send using SMTP                   
+    $mail->Host       = 'smtp.gmail.com';   //Set the SMTP server to send through
+    $mail->SMTPAuth   = true;        //$mail->SMTPAuth   = TRUE;
+    $mail->SMTPSecure = "tls";
+    $mail->Host       = "smtp.gmail.com";  //Enable SMTP authentication
+    // $mail->Username   = "bsccssmi@gmail.com";     //SMTP username
+    $mail->Username   = "shreeshhegde007@gmail.com"; 
+    // $mail->Password   = "zqizmahesajloykw";      //SMTP password
+    $mail->Password   = "jnlspqqmoidshroc";
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;     //Enable implicit TLS encryption
+    $mail->Port       = 465;
+    //TCP port to connect to; use 587
+    // if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->AddAddress("shreeshhegde07@gmail.com", "SRH");
+    $mail->SetFrom("shreeshhegde007@gmail.com", "Eco Harvest");
+    $mail->AddReplyTo("shreeshhegde07@gmail.com", "Jai");
+    $mail->AddCC("shreeshhegde07@gmail.com", "Shree");
+    $mail->Subject = "You have a new order";
+    $content = "<b>Please login and update order status</b>";
+    //Recipients
+    $mail->setFrom('shreeshhegde007@gmail.com', 'Shreesha');
+    $mail->addAddress('shreeshhegde07@gmail.com');      //Name is optional
+    // $mail->addAddress('shreeshhegde07@gmail.com', 'Jai');   //Add a recipient,       
+   //Content
+    $mail->isHTML(true);                             //Set email format to HTML
+  $mail->Body = "Ho Shreesha You have a new order Please login and update status";
+    $mail->AltBody = 'Update the order';
+
+    $mail->send();
+
+    echo '<h2> Message has been sent <h2>';
+    echo "<script>window.location.href='my-order.php'</script>";
+  }
+  catch(Exception $e) 
+    {
+     echo "<h3> Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+  
+//https://netcorecloud.com/tutorials/send-an-email-via-gmail-smtp-server-using-php/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 }    

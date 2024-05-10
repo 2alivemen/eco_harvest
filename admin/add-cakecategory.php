@@ -28,7 +28,7 @@ if(isset($_POST['submit']))
 
 <head>
 
-    <title>Cake Bakery System</title>
+    <title>Eco Harvest</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -52,7 +52,7 @@ if(isset($_POST['submit']))
         </div>
             <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-lg-10">
-                <h2>Cake Category</h2>
+                <h2>Product Category</h2>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                         <a href="dashboard.php">Home</a>
@@ -79,7 +79,7 @@ if(isset($_POST['submit']))
 
                             <form id="form" action="#" class="wizard-big" method="post" name="submit">
                                     <fieldset>
-                                    <h2>Cake Category</h2>
+                                    <h2>Product Category</h2>
                                     <div class="row">
                                         <div class="col-lg-8">
                                             <div class="form-group">

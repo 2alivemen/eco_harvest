@@ -36,7 +36,7 @@ if(isset($_POST['submit']))
 
     
 
-    <title>Cake Bakery System</title>
+    <title>Eco Harvest</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -151,21 +151,21 @@ if($row['OrderFinalStatus']=="Order Confirmed")
   echo "Order Confirmed";
 }
 
-if($row['OrderFinalStatus']=="Cake being Prepared")
+if($row['OrderFinalStatus']=="Oil being Prepared")
 {
-  echo "Cake being Prepared";
+  echo "Oil being Prepared";
 }
-if($row['OrderFinalStatus']=="Cake Pickup")
+if($row['OrderFinalStatus']=="Product Pickup")
 {
-  echo "Cake Pickup";
+  echo "Product Pickup";
 }
-if($row['OrderFinalStatus']=="Cake Delivered")
+if($row['OrderFinalStatus']=="Product Delivered")
 {
-  echo "Cake Delivered";
+  echo "ProductDelivered";
 }
 if($row['OrderFinalStatus']=="")
 {
-  echo "Wait for restaurants approval";
+  echo "Wait for Seller approval";
 }
 if($row['OrderFinalStatus']=="Order Cancelled")
 {
@@ -189,7 +189,7 @@ $cnt=1;?>
 
  <tr>
     <th>#</th>
-<th>Cake Image </th>
+<th>Product Image </th>
 <th>Item Name</th>
 <th>Delivey Type</th>
 <th>Price</th>
@@ -202,14 +202,14 @@ while ($row1=mysqli_fetch_array($query)) {
  <td><img src="itemimages/<?php echo $row1['Image']?>" width="60" height="40" alt="<?php echo $row['ItemName']?>"></td> 
   <td><?php  echo $row1['ItemName'];?></td> 
   <td><?php  echo $row1['CashonDelivery'];?></td>
-   <td>$ <?php  echo $total=$row1['ItemPrice'];?></td> 
+   <td>₹ <?php  echo $total=$row1['ItemPrice'];?></td> 
 </tr>
 <?php 
 $grandtotal+=$total;
 $cnt=$cnt+1;} ?>
 <tr>
   <th colspan="3" style="text-align:center">Grand Total </th>
-<td>$ <?php  echo $grandtotal;?></td>
+<td>₹ <?php  echo $grandtotal;?></td>
 </tr> 
 
 
@@ -228,7 +228,7 @@ $cnt=$cnt+1;} ?>
 
 <?php
 
-  if($orserstatus=="Order Confirmed" || $orserstatus=="Cake being Prepared" || $orserstatus=="Cake Pickup" || $orserstatus=="" ){ ?>
+  if($orserstatus=="Order Confirmed" || $orserstatus=="Oil being Prepared" || $orserstatus=="Product Pickup" || $orserstatus=="" ){ ?>
 
 
 <form name="submit" method="post"> 
@@ -239,14 +239,14 @@ $cnt=$cnt+1;} ?>
   </tr>
 
   <tr>
-    <th>Restaurant Status :</th>
+    <th>Product Status :</th>
     <td>
    <select name="status" class="form-control wd-450" required="true" >
      <option value="Order Confirmed" selected="true">Order Confirmed</option>
           <option value="Order Cancelled">Order Cancelled</option>
-     <option value="Cake being Prepared">Cake being Prepared</option>
-     <option value="Cake Pickup">Cake Pickup</option>
-     <option value="Cake Delivered">Cake Delivered</option>
+     <option value="Oil being Prepared">Oil being Prepared</option>
+     <option value="Product Pickup">Product Pickup</option>
+     <option value="Product Delivered">Product Delivered</option>
    </select></td>
   </tr>
     <tr align="center">
@@ -270,7 +270,7 @@ $cnt=1;
  ?>
 <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
   <tr align="center">
-   <th colspan="4" >Cake Tracking History</th> 
+   <th colspan="4" > Tracking History</th> 
   </tr>
   <tr>
     <th>#</th>
@@ -289,7 +289,7 @@ if($cancelledby==1){
 echo "("."by user".")";
 } else {
 
-echo "("."by Bakery".")";
+echo "("."by Seller".")";
 }
 
   ?></td> 

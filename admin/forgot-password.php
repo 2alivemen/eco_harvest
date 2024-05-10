@@ -25,7 +25,7 @@ if(isset($_POST['submit']))
 <html>
 
 <head>
-    <title>Cake Bakery System| Admin Forgot Password</title>
+    <title>Eco Harvest| Admin Forgot Password</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">

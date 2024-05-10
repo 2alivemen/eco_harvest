@@ -34,19 +34,19 @@ $name=$row['AdminName'];
                                     </li>
               
                 <li>
-                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Cake Category</span><span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Product Category</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="add-cakecategory.php">Cake Category</a></li>
-                        <li><a href="manage-cakecategory.php">Manage Cake Category</a></li>
+                        <li><a href="add-cakecategory.php">Product Category</a></li>
+                        <li><a href="manage-cakecategory.php">Manage Product Category</a></li>
                     
                        
                     </ul>
                 </li>
  <li>
-                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Cake Menu</span><span class="fa arrow"></span></a>
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Products Menu</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
-                        <li><a href="add-cake.php">Add Cake</a></li>
-                        <li><a href="manage-cake.php">Manage Cake</a></li>
+                        <li><a href="add-cake.php">Add Product</a></li>
+                        <li><a href="manage-cake.php">Manage Product</a></li>
                     </ul>
                 </li> 
 
@@ -55,9 +55,9 @@ $name=$row['AdminName'];
                     <ul class="nav nav-second-level collapse">
                          <li><a href="notconfirmedyet.php">Not Confirmed Yet</a></li>
                         <li><a href="confirmed-order.php">Order Confirmed</a></li>
-                        <li><a href="cakebeingprepared.php">Cake Being Prepared</a></li>
-                        <li><a href="cake-pickup.php">Cake Pickup</a></li>
-                        <li><a href="cake-delivered.php">Cake Delivered</a></li>
+                        <li><a href="cakebeingprepared.php">Oil Being Prepared</a></li>
+                        <li><a href="cake-pickup.php">Product Pickup</a></li>
+                        <li><a href="cake-delivered.php">Product Delivered</a></li>
                         <li><a href="canclled-order.php">Cancelled</a></li>
                          <li><a href="all-order.php">All Orders</a></li>
                     
@@ -80,7 +80,7 @@ $name=$row['AdminName'];
                        
                     </ul>
                 </li>
-        
+<!--         
                 <li>
                     <a href="#"><i class="fa fa-file"></i> <span class="nav-label">Enquiry</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
@@ -89,8 +89,8 @@ $name=$row['AdminName'];
                         
                        
                     </ul>
-                </li>
-                   <li>
+                </li> -->
+                   <!-- <li>
                     <a href="#"><i class="fa fa-file"></i> <span class="nav-label">Reports</span><span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level collapse">
                          <li><a href="bwdates-report-ds.php">B/w Dates</a></li>
@@ -98,7 +98,7 @@ $name=$row['AdminName'];
                         <li><a href="sales-reports.php">Sales Reports</a></li>
                        
                     </ul>
-                </li>
+                </li> -->
                 <li>
                     <a href="search.php"><i class="fa fa-th-large"></i> <span class="nav-label">Search</span> <span class="fa arrow"></span></a>
                                     </li>

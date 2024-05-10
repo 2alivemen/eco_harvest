@@ -1,6 +1,6 @@
 <div class="footer">
             
             <div>
-                <strong>Copyright @</strong> Cake Bakery System &copy; 2021
+                <strong>Copyright @</strong> Eco Harvest; 2024
             </div>
         </div>

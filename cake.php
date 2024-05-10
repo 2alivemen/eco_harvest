@@ -9,7 +9,7 @@ $userid= $_SESSION['fosuid'];
 $query=mysqli_query($con,"insert into tblorders(UserId,FoodId) values('$userid','$foodid') ");
 if($query)
 {
- echo "<script>alert('Cake has been added in to the cart');</script>";   
+ echo "<script>alert('Item has been added in to the cart');</script>";   
 } else {
  echo "<script>alert('Something went wrong.');</script>";      
 }

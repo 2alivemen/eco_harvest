@@ -51,6 +51,7 @@ Table of Content:
 a {
   text-decoration: none;
   vertical-align: middle;
+  color: #008000;
 }
 
 a:hover, a:focus {
@@ -444,7 +445,7 @@ i:before {
 }
 
 .top_header_area {
-  background: #f195b2;
+  background: #50C878;
   position: relative;
   z-index: 3;
 }
@@ -626,7 +627,7 @@ i:before {
   content: "";
   width: 0px;
   height: 2px;
-  background: #f195b2;
+  background: #50C878;
   position: absolute;
   bottom: -4px;
   left: 0px;
@@ -735,7 +736,7 @@ i:before {
 }
 
 .main_menu_area .navbar.navbar-expand-lg .navbar-nav li.submenu .dropdown-menu .submenu .dropdown-menu li:hover a {
-  background: #f195b2;
+  background: #008000;
   color: #fff;
 }
 
@@ -1517,8 +1518,9 @@ i:before {
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+
 .pest_btn {
-  background: #94c9d9;
+  background: #008000;
   color: #fff;
   line-height: 36px;
   display: inline-block;
@@ -4213,7 +4215,7 @@ i:before {
 /* Newsletter Area css
 ============================================================================================ */
 .newsletter_area {
-  background: #f195b2;
+  background: #50C878;
   padding: 35px 0px;
 }
 
@@ -6510,7 +6512,7 @@ i:before {
 /* Footer Area css
 ============================================================================================ */
 .footer_area {
-  background: #303339;
+  background: #008000;
   overflow: hidden;
 }
 

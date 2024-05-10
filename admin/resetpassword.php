@@ -26,7 +26,7 @@ session_destroy();
 
     
 
-    <title>Cake Bakery System| Reset Password</title>
+    <title>Eco Harvest| Reset Password</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">

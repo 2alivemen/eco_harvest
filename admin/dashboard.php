@@ -11,7 +11,7 @@ if (strlen($_SESSION['fosaid']==0)) {
 <html>
 
 <head>
-    <title>Cake Bakery System || Dashboard</title>
+    <title>Eco Harvest || Dashboard</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -84,16 +84,16 @@ $conforder=mysqli_num_rows($query2);
          <div class="col-lg-4">
                         <div class="ibox ">
                             <div class="ibox-title">
-                                <?php $query3=mysqli_query($con,"Select * from  tblorderaddresses where OrderFinalStatus ='Cake being Prepared'");
+                                <?php $query3=mysqli_query($con,"Select * from  tblorderaddresses where OrderFinalStatus ='Oil being Prepared'");
 $beigpre=mysqli_num_rows($query3);
 ?>
-<a class="text-muted text-uppercase m-b-20" href="cakebeingprepared.php" style="font-size: 20px"><strong>Cake being Prepared</strong></a>
+<a class="text-muted text-uppercase m-b-20" href="cakebeingprepared.php" style="font-size: 20px"><strong>Oil being Prepared</strong></a>
                                
                               
                             </div>
                             <div class="ibox-content">
                                 <h1 class="no-margins"><?php echo $beigpre;?></h1>
-                                <small>Cake being Prepared</small>
+                                <small>Oil being Prepared</small>
                             </div>
                         </div>
             </div>
@@ -101,31 +101,31 @@ $beigpre=mysqli_num_rows($query3);
                     <div class="col-lg-4">
                         <div class="ibox ">
                             <div class="ibox-title">
-                                <?php $query4=mysqli_query($con,"Select * from tblorderaddresses where OrderFinalStatus ='Cake Pickup'");
+                                <?php $query4=mysqli_query($con,"Select * from tblorderaddresses where OrderFinalStatus ='Product Pickup'");
 $foodpickup=mysqli_num_rows($query4);
 ?>
-<a class="text-muted text-uppercase m-b-20" href="cake-pickup.php" style="font-size: 20px"><strong> Cake Pickup</strong></a>
+<a class="text-muted text-uppercase m-b-20" href="cake-pickup.php" style="font-size: 20px"><strong> Product Pickup</strong></a>
                                 
                             </div>
                             <div class="ibox-content">
                                 <h1 class="no-margins"><?php echo $foodpickup;?></h1>
                                 
-                                <small> Cake Pickup</small>
+                                <small> Product Pickup</small>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="ibox ">
                             <div class="ibox-title">
-                                <?php $query5=mysqli_query($con,"Select * from  tblorderaddresses where OrderFinalStatus ='Cake Delivered'");
+                                <?php $query5=mysqli_query($con,"Select * from  tblorderaddresses where OrderFinalStatus ='Product Delivered'");
 $fooddel=mysqli_num_rows($query5);
 ?>
-<a class="text-muted text-uppercase m-b-20" href="Cake-delivered.php" style="font-size: 20px"><strong>Total Cake Deliver</strong></a>
+<a class="text-muted text-uppercase m-b-20" href="Cake-delivered.php" style="font-size: 20px"><strong>Total Product Deliver</strong></a>
 
                             </div>
                             <div class="ibox-content">
                                 <h1 class="no-margins"><?php echo $fooddel;?></h1>
-                                <small>Total Cake Deliver</small>
+                                <small>Total Product Deliver</small>
                             </div>
                         </div>
                     </div>

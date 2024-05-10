@@ -14,7 +14,7 @@ $query=mysqli_query($con, "update   tblcontact set IsRead ='$isread' where ID='$
 <html>
 
 <head>
-    <title>Cake Bakery System|| View Enquiry</title>
+    <title>Eco Harvest|| View Enquiry</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">

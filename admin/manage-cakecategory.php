@@ -25,7 +25,7 @@ $query=mysqli_query($con,"delete from tblcategory where ID='$catid'");
 <html>
 
 <head>
-    <title>Cake Bakery System|| Manage Category</title>
+    <title>Eco Harvest|| Manage Category</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">

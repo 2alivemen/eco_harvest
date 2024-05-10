@@ -41,7 +41,7 @@ else
 
 <head>
 
-    <title>Cake Bakery System||Edit Cake Image</title>
+    <title>Eco Harvest||Edit Cake Image</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">

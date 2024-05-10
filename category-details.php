@@ -9,7 +9,7 @@ $userid= $_SESSION['fosuid'];
 $query=mysqli_query($con,"insert into tblorders(UserId,FoodId) values('$userid','$foodid') ");
 if($query)
 {
- echo "<script>alert('Cake has been added in to the cart');</script>";   
+ echo "<script>alert('Item has been added in to the cart');</script>";   
 } else {
  echo "<script>alert('Something went wrong.');</script>";      
 }
@@ -112,7 +112,7 @@ while ($row=mysqli_fetch_array($ret)) {
 								<img src="admin/itemimages/<?php echo $row['Image'];?>" width="400" height="180">
 							</div>
 							<div class="cake_text">
-								<h4>$<?php echo $row['ItemPrice'];?></h4>
+								<h4>₹<?php echo $row['ItemPrice'];?></h4>
 								<h3><a href="cake-detail.php?fid=<?php echo $row['ID'];?>"><?php echo $row['ItemName'];?></a></h3>
 								<?php if($_SESSION['fosuid']==""){?>
        								<a href="login.php" class="pest_btn">Add to Cart</a>

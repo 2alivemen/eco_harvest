@@ -15,7 +15,7 @@ if (strlen($_SESSION['fosaid']==0)) {
 <head>
 
 
-    <title>Cake Bakery System|| Search</title>
+    <title>Eco Harvest|| Search</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">

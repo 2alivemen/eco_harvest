@@ -30,7 +30,7 @@ else
      move_uploaded_file($_FILES["itemimages"]["tmp_name"],"itemimages/".$itempic);
     $query=mysqli_query($con, "insert into tblfood(CategoryName,ItemName,ItemPrice,ItemDes,ItemQty,Weight,Image) value('$fcat','$itemname','$price','$description','$quantity','$weight','$itempic')");
     if ($query) {
-   echo '<script>alert("Cake has been added")</script>';
+   echo '<script>alert("Product has been added")</script>';
     echo "<script>window.location.href ='add-cake.php'</script>";
   }
   else
@@ -46,7 +46,7 @@ else
 <html>
 
 <head>
-    <title>Cake Bakery System|| Add Cake</title>
+    <title>Eco Harvest|| Add Product</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -71,7 +71,7 @@ else
         </div>
             <div class="row wrapper border-bottom white-bg page-heading">
             <div class="col-lg-10">
-                <h2>Cake Item</h2>
+                <h2>Item</h2>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                         <a href="dashboard.php">Home</a>
@@ -97,7 +97,7 @@ else
 
                             <form id="submit" action="#" class="wizard-big" method="post" name="submit" enctype="multipart/form-data">
                                     <fieldset>
-                                          <div class="form-group row"><label class="col-sm-2 col-form-label">Cake Category:</label>
+                                          <div class="form-group row"><label class="col-sm-2 col-form-label">Item Category:</label>
                                                 <div class="col-sm-10"><select name='foodcategory' id="foodcategory" class="form-control white_bg" required="true">
      
       <?php
@@ -126,7 +126,7 @@ else
                                             <div class="form-group row"><label class="col-sm-2 col-form-label">Quantity:</label>
                                                 <div class="col-sm-10"><input type="text" class="form-control" name="quantity" required="true"></div>
                                             </div>
-                                            <div class="form-group row"><label class="col-sm-2 col-form-label">Cake Weight:</label>
+                                            <div class="form-group row"><label class="col-sm-2 col-form-label">Item Weight:</label>
                                                 <div class="col-sm-10"><select class="form-control white_bg" required="true" name="weight">
                                                     <option value="">Choose Weight</option>
                                                     <option value="500 gm">500 gm</option>
